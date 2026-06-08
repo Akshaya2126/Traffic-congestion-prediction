@@ -161,15 +161,3 @@ fig3 = px.line(
 )
 
 st.plotly_chart(fig3,use_container_width=True)
-
-!pip install pandas numpy scikit-learn xgboost streamlit plotly joblib -q
-
-!pip install pyngrok -q
-
-!streamlit run app.py &>/content/logs.txt &
-
-from pyngrok import ngrok
-
-public_url = ngrok.connect(8501)
-
-print(public_url)
